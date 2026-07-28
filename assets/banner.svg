@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0d0a14"/>
+    <stop offset="55%" stop-color="#161022"/>
+    <stop offset="100%" stop-color="#1f1430"/>
+  </linearGradient>
+  <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" stop-color="#ff7a1a"/>
+    <stop offset="100%" stop-color="#ffd166"/>
+  </linearGradient>
+  <linearGradient id="barGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%" stop-color="#7b2ff7"/>
+    <stop offset="100%" stop-color="#22d3ee"/>
+  </linearGradient>
+  <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7b2ff7" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#7b2ff7" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#ffd9b0"/>
+  </linearGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+<circle cx="960" cy="90" r="200" fill="url(#glow1)"/>
+<circle cx="1080" cy="260" r="220" fill="url(#glow2)"/>
+
+<!-- faint grid -->
+<g stroke="#3a2f52" stroke-width="1" opacity="0.25">
+  <line x1="0" y1="60" x2="1200" y2="60"/>
+  <line x1="0" y1="120" x2="1200" y2="120"/>
+  <line x1="0" y1="180" x2="1200" y2="180"/>
+  <line x1="0" y1="240" x2="1200" y2="240"/>
+  <line x1="0" y1="300" x2="1200" y2="300"/>
+</g>
+
+<!-- EQ bars cluster right side -->
+<g opacity="0.95">
+  <rect x="760" y="230" width="18" height="90" fill="url(#barGrad)" rx="3"/>
+  <rect x="788" y="180" width="18" height="140" fill="url(#barGrad2)" rx="3"/>
+  <rect x="816" y="205" width="18" height="115" fill="url(#barGrad)" rx="3"/>
+  <rect x="844" y="150" width="18" height="170" fill="url(#barGrad2)" rx="3"/>
+  <rect x="872" y="195" width="18" height="125" fill="url(#barGrad)" rx="3"/>
+  <rect x="900" y="165" width="18" height="155" fill="url(#barGrad2)" rx="3"/>
+  <rect x="928" y="220" width="18" height="100" fill="url(#barGrad)" rx="3"/>
+  <rect x="956" y="140" width="18" height="180" fill="url(#barGrad2)" rx="3"/>
+  <rect x="984" y="210" width="18" height="110" fill="url(#barGrad)" rx="3"/>
+  <rect x="1012" y="175" width="18" height="145" fill="url(#barGrad2)" rx="3"/>
+  <rect x="1040" y="235" width="18" height="85" fill="url(#barGrad)" rx="3"/>
+  <rect x="1068" y="195" width="18" height="125" fill="url(#barGrad2)" rx="3"/>
+  <rect x="1096" y="215" width="18" height="105" fill="url(#barGrad)" rx="3"/>
+</g>
+
+<!-- waveform accent line above bars -->
+<path d="M760 130 Q 800 90, 840 130 T 920 130 T 1000 130 T 1080 130 T 1140 130"
+      fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.7"/>
+
+<!-- circular play/dot motif -->
+<circle cx="140" cy="70" r="5" fill="#ff7a1a" opacity="0.9"/>
+<circle cx="165" cy="70" r="5" fill="#7b2ff7" opacity="0.9"/>
+<circle cx="190" cy="70" r="5" fill="#22d3ee" opacity="0.9"/>
+
+<!-- headline -->
+<text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="60" font-weight="700" fill="url(#headGrad)">
+  <tspan x="60" y="150" textLength="1040" lengthAdjust="spacingAndGlyphs">Ableton Live Full Version</tspan>
+  <tspan x="60" y="220" textLength="480" lengthAdjust="spacingAndGlyphs">Download</tspan>
+</text>
+
+<!-- tagline -->
+<text x="60" y="270" font-family="'Segoe UI', Arial, sans-serif" fill="#c9bfe0" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="20.3">
+  Delivers full-version Ableton Live installer access for the music production ecosystem
+</text>
+
+<!-- subtle bottom accent line resembling audio track -->
+<line x1="60" y1="300" x2="700" y2="300" stroke="#ff7a1a" stroke-width="3" opacity="0.6"/>
+<line x1="60" y1="308" x2="500" y2="308" stroke="#7b2ff7" stroke-width="2" opacity="0.4"/>
+</svg>
